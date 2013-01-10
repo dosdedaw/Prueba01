@@ -1,0 +1,234 @@
+
+<html lang="es">
+<head>
+	<title>Java</title>
+	<meta name="description" content="Contsis"> <!--Aqui ponemos una pequeña descripcion para los buscadores-->
+	<meta name="keywords" content="cuerpo, documento"> <!--Palabras claves para los buscadores-->
+	<meta name="language" content="es"> <!--Nos valdra para indicar el lenguage que vamos a usar-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!--Para que el navegador sepa que juego de caracteres usar. Cojeran los navegadores la ñ, acentos y demas carteres raros-->
+	<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" /> <!--Para adaptar tamaño a movil-->
+	<meta http-equiv="Cache-Control" content="max-age=86400"/> <!--Para controlar la cache en moviles-->
+
+	<link rel=StyleSheet href="../../recursos/css/general.css" type="text/css"></link>
+	<!--Para enlazar con el archivo css con los estilos-->	
+	
+	</head>
+
+	
+<body >
+
+		<center><table class="tablamega">
+			<tr>
+				<th class="tablar"></th>
+				<th class="tablar">Pseudocodigo</th>
+				<th class="tablar">Ordinograma</th>
+				<th class="tablar">Java</th>
+			</tr>
+			<tr>
+				<th class="tablar">Inicio y Fin</th>
+				<td class="tablar"><p><strong>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- entero var1 <br/> 
+				--- doble var2 <br/>
+				--- decimal var3, var4 <br/>
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- var1 = 2 <br/>
+				--- funcion_inicio <br/>
+				---- accion <br/>
+				--- funcion_fin <br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</strong></p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java00.png" width="290px"></td>
+				<td class="tablar"><p><strong>
+				public class Media {<br/>
+				public static void main(String[] args) {<br/>
+				 }<br/>
+				}<br/></strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">Comentarios</th>
+				<td class="tablar"><p><strong>//comentarios... <br/> /*comentarios...*/</strong></p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java01.png" width="290px"></td>
+				<td class="tablar"><p><strong>//comentarios... <br/> /*comentarios...*/</strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">Salida</th>
+				<td class="tablar"><p>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- cadena var1 <br/> 
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- <strong>escribe "Mete cadena" //Saca en pantalla el mensaje: Mete cadena</strong><br/>
+				--- leer var1 <br/>
+				--- <strong>escribe var1 //Saca en pantalla el valor de var1</strong><br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java03.png" width="290px"></td>
+				<td class="tablar"><p><strong>System.out.print("Texto a mostrar");</strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">Entrada o Scanner</th>
+				<td class="tablar"><p>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- cadena var1 <br/> 
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- escribe "Mete cadena" <br/>
+				--- <strong>leer var1 //Mete en var1 el valor metido por teclado</strong><br/>
+				--- escribe var1 <br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java02.png" width="290px"></td>
+				<td class="tablar"><p>
+				<strong>import java.until.Scanner;</strong> //Fuera del programa <br/>
+				public class Media {<br/>
+				public static void main(String[] args) {<br/>
+				<strong>Scanner teclado = new Scanner (System.in);</strong> //Creamos la funcion<br/>
+				System.out.println("Introduce un valor");<br/>
+				<strong>int variable = teclado.nextInt;</strong> //Da a variable el valor introducido por teclado<br/>
+				 }<br/>
+				}<br/>
+				</p></td>
+			</tr>
+			<tr>
+				<th class="tablar">if</th>
+				<td class="tablar"><p>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- entero cont <br/>
+				--- cadena var1 <br/> 
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- cont = 4 <br/>
+				--- <strong>SI cont>0 <br/>
+				---- escribe "Mete cadena"<br/>
+				---- leer var1 <br/>
+				---- escribe var1 <br/>
+				---- cont-- <br/>
+				--- SI_NO <br/>
+				---- escribe "Hola Javi"<br/>
+				--- SI_NO_FIN <br/>
+				--- SI_FIN </strong><br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java04.png" width="290px"></td>
+				<td class="tablar"><p><strong>if (condicion){ //Ej. de condicion (a==c)<br/>
+				accion; //funcion a realizar<br/>
+				}else{ // Lo que se hará si no se cumple la condicion anterior <br/>
+				accion;<br/>
+				}</strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">while</th>
+				<td class="tablar"><p>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- entero cont <br/>
+				--- cadena var1 <br/> 
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- cont = 4 <br/>
+				--- <strong>MIENTRAS cont>0 <br/>
+				---- escribe "Mete cadena"<br/>
+				---- leer var1 <br/>
+				---- escribe var1 <br/>
+				---- cont-- <br/>
+				--- MIENTRAS_FIN </strong><br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java05.png" width="290px"></td>
+				<td class="tablar"><p><strong>
+				while (condicion){<br/>
+				accion;<br/>
+				}</strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">do while</th>
+				<td class="tablar"><p>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- entero cont <br/>
+				--- cadena var1 <br/> 
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- cont = 4 <br/>
+				--- <strong>REPETIR <br/>
+				---- escribe "Mete cadena"<br/>
+				---- leer var1 <br/>
+				---- escribe var1 <br/>
+				---- cont-- <br/>
+				--- MIENTRAS cont>0 </strong><br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java06.png" width="290px"></td>
+				<td class="tablar"><p><strong>
+				do{<br/>
+				accion;<br/>
+				}while (condicion);</strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">for</th>
+				<td class="tablar"><p>
+				PROGRAMA nom_pro <br/>
+				MODULO nom_mod <br/>
+				INICIO <br/>
+				-- DATOS_INICIO <br/>
+				--- entero cont <br/>
+				--- cadena var1 <br/> 
+				-- DATOS_FIN <br/>
+				-- ALGORIT_INI <br/>
+				--- <strong>PARA cont=0 ; cont<4 ; +1  <br/>
+				---- escribe "Mete cadena"<br/>
+				---- leer var1 <br/>
+				---- escribe var1 <br/>
+				--- PARA_FIN </strong><br/>
+				-- ALGORIT_FIN <br/>
+				FIN 
+				</p></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java07.png" width="290px"></td>
+				<td class="tablar"><p><strong>
+				for (ini ; fin ; incremento){ //Ej. bucle (i=0 ; i<5 ; i++)<br/>
+				accion;<br/>
+				}</strong></p></td>
+			</tr>
+			<tr>
+				<th class="tablar">switch</th>
+				<td class="tablar"></td>
+				<td class="tablar"><img src="./asignaturas/Programacion/java08.png" width="290px"></td>
+				<td class="tablar"><p><strong>
+				while (variable){ //variable sera un valor de los posibles case<br/>
+				case a: accion;<br/>
+				case b: accion;<br/>
+				case c: accion;<br/>
+				.<br/>
+				.<br/>
+				.<br/>
+				}</strong></p></td>
+			</tr>
+		</table></center>
+		
+		
+</body>
+</html>

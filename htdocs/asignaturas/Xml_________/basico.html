@@ -1,0 +1,162 @@
+<html lang="es">
+<head>
+	<title>XML</title>
+	<meta name="description" content="Estructura basica"> <!--Aqui ponemos una pequeña descripcion para los buscadores-->
+	<meta name="keywords" content="cabecera, cuerpo, documento"> <!--Palabras claves para los buscadores-->
+	<meta name="language" content="es"> <!--Nos valdra para indicar el lenguage que vamos a usar-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!--Para que el navegador sepa que juego de caracteres usar. Cojeran los navegadores la ñ, acentos y demas carteres raros-->
+	<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" /> <!--Para adaptar tamaño a movil-->
+	<meta http-equiv="Cache-Control" content="max-age=86400"/> <!--Para controlar la cache en moviles-->
+		<link rel=StyleSheet href="./recursos/css/general.css" type="text/css"></link>
+	
+</head>
+	
+	
+<body>
+	
+	<ol>
+		<li><h2>La estructura del HTML</h2></li>
+			<p>La estructura basica que debe tener una página HTML es:</p>   
+			<center><p><img src="./asignaturas/Xml_________/basiimg00.png" width="40%"></img></p></center>
+
+		<li><h2>Etiqueta META</h2></li>
+			<p>Dentro de la cabecera de una página web (entre &lthead&gt y &lt/head&gt) es donde se coloca las etiquetas de metainformación&ltmeta&gt. Estas etiqueta sirven para, entre otras cosas, indicar a los motores de búsqueda que hay en Internet la información que queremos que se almacene en estos; por ejemplo el título de la página, temática de esta o las palabras por las cuales deseamos que se localice nuestra página en Internet. 
+Los atributos que se pueden poner a la etiqueta meta son:</p>
+			<ol>
+				<li>content</li>
+					<p>Este atributo siempre va emparejado con el atributo name o con http-equiv  y contendrá un texto que se corresponderá con el valor del atributo al que acompaña.</p>
+				<li>name</li>
+					<p>Este atributo sirve para indicar el tipo del elemento meta que se va a utilizar. Algunos de ellos son:</p>
+				<ol type="a">
+					<li>author</li>
+						<p>Cuando utilizamos este valor, en el atributo content indicaremos quien es el autor de la página. Normalmente sólo se coloca en la primera página de nuestra web.
+&ltmeta name=”author” content=”Socorro Manzano”&gt</p>
+					<li>generator</li>
+						<p>Con este valor en el atributo content indicar el nombre y la versión del programa.
+&ltmeta name=”generator” content=Macromedia Dreamwears 2.01”&gt</p>
+					<li>lang</li>
+						<p>Indicar el idioma del documento.
+&lymeta name=”lang” content=”es”&gt&ly!—Idioma del documento (Español)--&gt</p>
+					<li>descrption</li>
+						<p>No debe sobrepasar los 250 caracteres.
+&ltmeta name=”description” content=”Mi Página”&gt</p>
+					<li>keywords</li>
+						<p>Indicamos las palabras claves por las que queremos que los buscadores encuentren o indexen nuestra página. Las palabras deben ir separadas por comas y a ser posible, sin espacios.
+&ltmeta name=”keywords” content= ”presentaci&oacute;n, recursos, objetivos,sitio web”&gt</p>
+				</ol>
+				<li>http-equiv</li>
+				<p>Este atributo puede utilizarse en lugar de name y posee un significado especial cuando los documentos se obtienen por medio de http. Los servidores utilizan el nombre de la propiedad especificada en el atributo para http-equiv para crear una cabecera en la repuesta HTTP</p>
+					<ol>
+						<li>Content-Type</li>
+							<p>ndica el tipo de documento elaborado y el juego de caracteres utilizado. El tipo de caracteres que utiliza el documento es el denominado Latin1, cuyo código ISO es el 8859-1
+&ltmeta http-equiv=”Conent-Type” content=”text/html;charset=iso-8859-1”&gt</p>
+						<li>Refresh</li>
+							<p>Cargue una determinada página después de que pase un tiempo especificado por nosotros.<br/>
+&ltmeta http-equiv=”Refresh” content=”10;URL=http://www.google.es”&gt</p>
+					</ol>
+			<ol>
+
+
+		<li><h2>Elemento link</h2></li>
+			<p>El elemento link no tiene  contenido pero conlleva información sobre la relación entre el documento actual y el documento o recurso utilizado.  Uno de sus atributos es rel, que nos permite definir la relación entre diversos documentos<br/>
+&ltlink rel=”Next” ref.=”documento.html”&gt</p>
+		<li><h2>El formato</h2></li>
+			<ol>
+				<li>El formato de texto lo componen las siguientes etiquetas y atributos:</li>
+					<img src="./asignaturas/Xml_________/basiimg01.jpeg"></img>
+				<li>Etiqueta</li>
+				<ol>
+					<li>&ltfont&gt</li>
+						<p>Tiene tres  atributos y necesita llevar al menos uno para que funcione. Tambien necesitara ser cerrado &lt/font&gt</p>
+					<ol>
+					<li>size</li>
+						<p>Número del 1 al 7. Tamaño de la letra entre 8 y 20 puntos.</p>		
+					<li>face</li>
+						<p>Nombre de la fuente. Tipo de fuente, arial, courier…, Si ponemos más de una fuente separadas por comas, en este atributo, se cargará la primera de ellas siempre y cuando ésta se halle en el sistema operativo del usuario que ve la página. Si la fuente indicada( o ninguna de las fuentes especificadas) no existe en SO del internauta, se verá la fuente que tenga por defecto su navegador, normalmente Times New Roman</p>
+					<li>color</li>
+						<p>Este atributo especifica el color del texto.
+Nombre de un color o su equivalente en código hexadecimal. Hay 140 nombre de colores, o en hexadecimal (#RRGGBB). Las dos primeras letras indican la cantidad de rojo, las dos siguientes verde y las dos últimas azul.</p>
+					</ol>
+				</ol>
+				<li>&ltbasefont&gt</li>
+					<p>Establece el tamaño base de fuente (usando el atributo size). Es un elemento que no tiene etiqueta de fin. Los cambios del tamaño de la fuente producidos con &ltfont&gt son relativos al tamaño base de fuente establecido por &ltbasefont&gt. Si no se usa &ltbasefont&gt, el tamaño base de fuente es el indicado en el atributo.</p>
+			</ol>
+		<li><h2>Formato de párrafo</h2></li>
+			<ol type="a">
+				<li>&ltp&gt&lt/p&gt</li>	
+				<p>Crea un nuevo párrafo haciendo un salto de línea, es decir introduciendo una línea en blanco entre el párrafo que precede a dicho código y el texto situado a continuación. Dentro de un párrafo hay que obligar al salto de línea. <br/>
+&ltp align=”center”&gt   texto &lt/p&gt</p>
+				<ol>
+					<li>align</li>	
+					<p>Atributo opcional, que puede tomar los valores</p>
+					<ol>
+						<li>right</li>	
+						<p>justificar el texto a la derecha</p>
+						<li>left</li>	
+						<p>justificar el texto a la izquierda</p>
+						<li>center</li>	
+						<p>texto centrado</p>
+						<li>justify</li>	
+						<p>justificar el texto a ambos lados</p>
+					</ol>
+				</ol>
+
+				<li>&ltdiv&gt&lt/div&gt</li>	
+				<p>Sirve para alinear elementos sin necesidad de crear un nuevo párrafo tiene un atributo obligatorio align. No hace salto de línea.
+&ltdiv align=”center”&gt Texto &lt/div&gt</p>
+				<ol>
+					<li>align</li>	
+					<ol>
+						<li>right</li>	
+						<p>justificar el texto a la derecha</p>
+						<li>left</li>	
+						<p>justificar el texto a la izquierda</p>
+						<li>center</li>	
+						<p>texto centrado</p>
+					</ol>
+				</ol>
+				<li>&ltcenter&gt&lt/center&gt</li>	
+				<p>Sirve para centrar elementos en las páginas, sin tener que usar 	&ltdiv align=”center”&gt o 
+			&ltp align=”center”&gt</p>
+				<li>&ltblockquote&gt&lt/blockquote&gt</li>	
+				<p>Hace que el párrafo se sangre por ambos lados, izquierda y derecha.</p>
+				<li>&ltbr&gt&ltbr/&gt</li>	
+				<p>Salto de línea, sin necesidad de crear un nuevo párrafo. </p>
+				<li>&ltnobr&gt</li>	
+				<p>Evita que el navegador haga un salto de línea en el lugar donde NO nos gustaría, como puede ser Banco de Santander.
+Banco de Santander &ltnobr&gt</p>
+				<li>&ltpre&gt&lt/pre&gt</li>	
+				<p>Nos guarda la estructura del texto escrito en el editor, respetando los espacios en blanco tabuladores y retorno de carro. El uso del preformato nos garantiza que una línea de texto original no se verá partida en dos o más líneas en el cliente web.</p>
+				<li>&lth1&gt&lt/h1&gt....&lth6&gt&lt/h6&gt</li>	
+				<p>Sirve para poner un tamaño grande (más o menos 20 puntos) y estilo negrita a todo el texto del párrafo, como si de un título se tratase. Admite el atributoaligncon los mismo valores que la etiqueta&ltp&gt<br/> Al contrario que los size aqui a numero menor mayor la letra (&lth1&gt es la letra mas grande).</p>
+			</ol>
+
+		<li><h2>El formato de la página</h2></li>
+		<p>El formato de la página es aquel que se aplica a todo el documento. En este caso no lo conforman las etiquetas, sino los atributos de la etiqueta &ltbody&gt. Mediante estos atributos podemos cambiar el color por defecto del navegador: color del texto y los diferentes hiperenlaces. Los atributos son:</p>
+			<ol type="a">
+				<li>text</li>
+				<p>El atributo text debe ser igual a un color, ya sea en código hexadecimal o con nombre del color. El color elegido debe contrastar con el color que utilice la fuente. 
+El color aquí elegido será el de la fuente por defecto, si queremos cambiarlo hay que utilizar la etiqueta &ltfont color=”colorelegido”&gt
+&ltbodytext=”red”&gt  el color de la fuente será el rojo.</p>
+				<li>link (vinculo)</li>
+				<p>Este atributo también será igual a un color, pero sólo sirve para poner color al texto o borde de la imagen cuando estos sean hiperenlaces. Si no se pone nada suele salir en color azul, que son los colores por defecto de nuestro navegador.</p>
+				<li>vlink(vinculo visitado)</li>
+				<p>Sirve para controlar el color de los vínculos visitados</p>
+				<li>align(vinculo activo)</li>
+				<p>Sirve para controlar el color del vinculo activo.</p>
+				<li>bgcolor(color de fondo)</li>
+				<p>Pone un color  de fondo a todo el documento. </p>
+				<li>Background(fondo)</li>
+				<p>Sirve para poner una imagen de fondo de la página. No es necesario que la imagen ocupe toda la superficie, pues el navegador creará un efecto de mosaico para repartir la imagen por toda la página.</p>
+				<p>Si ponemos los atributos bgcolor y blackground en la etiqueta <body>, siempre prevalecerá el blackground sobre bgcolor, aunque este segundo se cargara primero. La imagen que se ponga de fondo puede tener los formatos jpg,gif, png.
+&ltbody bgcolor=”silver” background=”imagren.jpg”&gt</p>
+
+			</ol>
+
+
+	</ol>
+	
+
+
+</body>
+</html>

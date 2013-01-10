@@ -1,0 +1,78 @@
+	body{
+	margin:auto;
+	padding:0;
+	margin:0;
+	text-align:center;
+	background-image:url('../../img/fondo.png');
+	}
+	h1, h2, h3, p{color:#615006;}
+	#contenedor{
+	width:960px;
+	clear:both;
+	margin:auto;
+	}
+	#cabecera{width:100%;
+	background-image:url('../../img/header250.png');
+	height:250px;
+	}
+	#contenido{width:710px;
+	float:left;
+	margin-top:20px;
+	margin-right:20px;
+	}
+	#menu{-webkit-border-radius: 15px 15px 15px 15px;
+/*	-moz-border-radius:15 px;
+	border-radius: 15px 15px 15px 15px;*/
+	padding:10px;
+	width:210px;
+	float:right;
+	margin-top:20px;
+	background:#615006;	
+	}
+	#pie{text-align:center;
+	margin-top:25px;
+	padding:25px;
+	clear:both;
+	}
+	.ppie{
+	border-top:1px dashed #7C6508;
+	padding:20px;
+	color:#7C6508;
+	}
+	
+	a{
+	display:block;
+	width:100%;
+	}
+	.nivel1{background:#7C6508;
+	-moz-border-radius:15 px;
+	border-radius: 15px 15px 15px 15px;
+	text-align:center;
+	}
+	.nivel1 a{
+	color:#372802;
+	text-decoration:none;
+	font-weight:bold;
+	height:55px;
+	margin-top:5px;
+	line-height: 55px;
+	}
+	.nivel2{border-top:1px solid #000;
+	color:#615006;
+	margin-top:5px;
+	}
+	.nivel2 a{color:#372802;
+	text-decoration:none;
+	font-weight:bold;
+	padding-top:3px
+	}
+	.nivel3{}
+	.hijos_menu{display:none;}
+	.activo{-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius:15 px;
+	border-radius: 15px 15px 15px 15px;
+	margin-top:3px;color:#FEEFC4 !important;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	-moz-border-radius:15 px;
+	}
+	.formNav{display:none;}
